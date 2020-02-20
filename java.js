@@ -44,6 +44,12 @@ $('#toggle').click(function() {
    $('#overlay').toggleClass('open');
   });
 
+    $(document).ready(function(){
+      $('.your-class').slick({
+        
+      });
+    });
+
 //$('#wormenu').click(function() {
 //    $('.worm').toggle();
 //    $(this).toggleClass('.worm.active');
