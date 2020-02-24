@@ -67,37 +67,37 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: opacity .25s ease;
+    transition: opacity .5s ease;
     width: 20px;
     height: 20px;
     padding: 30px;
     border-bottom-right-radius: 10px;
-    z-index: 40;
+    z-index: 140;
 
 }
 
 .button_container img {
   height: 14px;
   width: auto;
-  z-index: 40;
+  z-index: 140;
 }
 
 .overlay {
   position: fixed;
-  background: #171717;
+  /*background: black;*/
   top: 0;
+  background-color: rgba(255, 255, 255, 0.95);
   left: 0;
   width: 100%;
   height: 0%;
-  opacity: 0;
   visibility: hidden;
-  transition: 1s;
+  transition: 0.7s ease;
   overflow: hidden;
-  z-index: 3;
+  z-index: 140;
 }
 
-/*@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  .overlay.open {
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .overlay {
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
     background-color: rgba(19, 19, 20, 0.7);  
@@ -105,12 +105,12 @@
   .warning {
     display: none;
   }
-}*/
+}
 
 
 .overlay.open {
 /*  background-color: rgba(19, 19, 20, 0.95);*/
-  background-color: black;
+  /*background-color: black;*/
   opacity: 10;
   visibility: visible;
   height: 100%;
@@ -164,8 +164,8 @@
   opacity: 0;
 }
 .overlay ul li a {
-  padding: 20px;
-  background-color: #1b171a;
+  padding: 30px;
+  background-color: black;
   display: block;
   position: relative;
   color: #FFF;
